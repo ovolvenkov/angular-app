@@ -17,6 +17,7 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {FormsModule} from "@angular/forms";
 import {DropdownDirective} from "./directives/dropdown.directive";
+import {ShoppingListService} from "./services/shopping-list.service";
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import {DropdownDirective} from "./directives/dropdown.directive";
     MatFormFieldModule,
     MatSnackBarModule
   ],
-  providers: [],
+  providers: [ShoppingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
