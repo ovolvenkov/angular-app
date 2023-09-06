@@ -15,6 +15,7 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatMenuModule} from "@angular/material/menu";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
     MatInputModule,
     MatButtonModule,
     MatMenuModule,
