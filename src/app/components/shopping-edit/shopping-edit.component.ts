@@ -7,9 +7,4 @@ import {MatSnackBar} from "@angular/material/snack-bar";
   styleUrls: ['./shopping-edit.component.css']
 })
 export class ShoppingEditComponent {
-  constructor(private _snackBar: MatSnackBar) {}
-
-  openSnackBar(message: string, action: string) {
-    this._snackBar.open(message, action);
-  }
 }
