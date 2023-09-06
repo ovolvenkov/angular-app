@@ -6,18 +6,17 @@
 
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li><a href="#" (click)="onSelect('recipes')">Recipes</a></li>
+        <li><a href="#" (click)="onSelect('recipe')">Recipes</a></li>
         <li><a href="#" (click)="onSelect('shopping-list')">Shopping List</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <button mat-button [matMenuTriggerFor]="menu">
-          Manage
-          <span class="caret"></span>
-        </button>
-        <mat-menu #menu="matMenu">
-          <a href="#" mat-menu-item>Save data</a>
-          <a href="#" mat-menu-item>Fetch data</a>
-        </mat-menu>
+        <li class="dropdown" appDropdown>
+          <a href="#" class="dropdown-toggle" role="button">Manage <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Save Data</a></li>
+            <li><a href="#">Fetch Data</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div>
