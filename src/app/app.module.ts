@@ -18,6 +18,7 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {FormsModule} from "@angular/forms";
 import {DropdownDirective} from "./directives/dropdown.directive";
 import {ShoppingListService} from "./services/shopping-list.service";
+import {AppRoutingModule} from "../router/app-routing.module";
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import {ShoppingListService} from "./services/shopping-list.service";
     MatButtonModule,
     MatMenuModule,
     MatFormFieldModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    AppRoutingModule
   ],
   providers: [ShoppingListService],
   bootstrap: [AppComponent]
