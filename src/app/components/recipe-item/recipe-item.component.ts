@@ -9,7 +9,6 @@ import {RecipeService} from "../../services/recipe.service";
 })
 export class RecipeItemComponent {
   @Input() recipe: Recipe;
-  @Output() recipeSelected = new EventEmitter<void>();
 
   constructor(private recipeService: RecipeService) {
   }
