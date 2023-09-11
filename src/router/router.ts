@@ -1,9 +1,9 @@
 import {Routes} from "@angular/router";
-import {RecipesComponent} from "../app/components/recipes/recipes.component";
-import {ShoppingListComponent} from "../app/components/shopping-list/shopping-list.component";
-import {RecipeStartComponent} from "../app/components/recipe-start/recipe-start.component";
-import {RecipeDetailComponent} from "../app/components/recipe-detail/recipe-detail.component";
-import {RecipeEditComponent} from "../app/components/recipe-edit/recipe-edit.component";
+import {RecipesComponent} from "@components/recipes/recipes.component";
+import {ShoppingListComponent} from "@components/shopping-list/shopping-list.component";
+import {RecipeStartComponent} from "@components/recipe-start/recipe-start.component";
+import {RecipeDetailComponent} from "@components/recipe-detail/recipe-detail.component";
+import {RecipeEditComponent} from "@components/recipe-edit/recipe-edit.component";
 
 export const appRoutes: Routes = [
   { path: '', redirectTo: '/recipes', pathMatch: 'full' },
