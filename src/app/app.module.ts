@@ -21,6 +21,7 @@ import {ShoppingListService} from "@services/shopping-list.service";
 import {AppRoutingModule} from "../router/app-routing.module";
 import { RecipeStartComponent } from '@components/recipe-start/recipe-start.component';
 import { RecipeEditComponent } from '@components/recipe-edit/recipe-edit.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { RecipeEditComponent } from '@components/recipe-edit/recipe-edit.compone
     MatFormFieldModule,
     MatSnackBarModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [ShoppingListService],
   bootstrap: [AppComponent]
